@@ -1,0 +1,19 @@
+:root {
+    --accent: #000;
+    --on_accent_text: #fff;
+    --on_accent_icon: #fff;
+
+    --primary: #210E09;
+    --on_primary_text: #fff;
+    --on_primary_icon: #fff;
+
+    --bg: #F6F6F6;
+    --on_bg_text: #000;
+    --on_bg_text_sec: #575757;
+    --on_bg_icon: #000;
+
+    --alert: #ff0000;
+    --on_alert_text: #fff;
+    --on_alert_icon: #fff;
+
+}

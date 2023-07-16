@@ -1,0 +1,30 @@
+@import '_reset.scss';
+
+body {
+    background: var(--bg);
+}
+
+
+
+#matrix-animation {
+    position: absolute;
+    // top: -100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: grey;
+    font-family: monospace;
+    font-size: 25px;
+    pointer-events: none;
+}
+.matrix-text {
+    position: absolute;
+    top: -50px;
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    opacity: 0;
+    transition: opacity 1s;
+}
