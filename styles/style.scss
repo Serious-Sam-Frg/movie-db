@@ -1,14 +1,33 @@
 @import '_reset.scss';
 
-body {
-    background: var(--bg);
+html {
+    height: 100%;
 }
 
+body {
+    font-family: 'Futura PT';
+    background: var(--bg);
+    position: relative;
 
+    min-width: 320px;
+    line-height: 1.5;
+    height: 100%;
+}
+.site-padding {
+    padding: 0 30px;
+}
+.site-width {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
 
 #matrix-animation {
     position: absolute;
-    // top: -100%;
     top: 0;
     right: 0;
     left: 0;
@@ -18,6 +37,7 @@ body {
     font-family: monospace;
     font-size: 25px;
     pointer-events: none;
+    z-index: -1;
 }
 .matrix-text {
     position: absolute;
@@ -28,3 +48,8 @@ body {
     opacity: 0;
     transition: opacity 1s;
 }
+
+@import '_site_buttons.scss';
+@import '_header.scss';
+@import '_site_slider.scss';
+

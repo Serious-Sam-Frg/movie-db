@@ -1,7 +1,7 @@
 $(function(){
 
 
-
+    // Bg animation
     $(document).ready(function() {
         var words = [
             "movie",
@@ -26,7 +26,7 @@ $(function(){
 
         function createMatrixText() {
             var text = getRandomWord();
-            var xPos = Math.random() * ($(window).width() - 100);
+            var xPos = Math.random() * ($(window).width());
             var $matrixText = $("<div>")
                 .addClass("matrix-text")
                 .text(text)
@@ -40,11 +40,11 @@ $(function(){
 
             setTimeout(function() {
                 $matrixText.css("opacity", 0);
-            }, 3500);
+            }, 1200);
 
             $matrixText.animate(
                 { top: $(window).height() },
-                6000,
+                7000,
                 "linear",
                 function() {
                     $(this).remove();
@@ -54,8 +54,20 @@ $(function(){
 
         setInterval(createMatrixText, 100);
     });
+    // Bg animation
 
 
 
+  var slider = tns({
+    container: '.site-slider__items',
+    items: 1,
+    slideBy: 1,
+    mode: "carousel",
+    axis: "horizontal",
+    center: false,
+    autoWidth: false,
+    nav: false,
+    controlsContainer: ".site-slider__arrows"
+  });
 
 });
